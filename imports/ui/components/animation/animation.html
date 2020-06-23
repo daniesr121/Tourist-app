@@ -1,0 +1,150 @@
+<template name="Animation">
+  <canvas id="view"></canvas>
+
+  <div>
+    <div
+      id="main"
+      style="
+        overflow: auto;
+        background: rgba(6, 32, 80, 0.25);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      "
+    >
+      <div id="title">
+        <h1 id="header"><span>Summer </span> <span> Paradise</span></h1>
+        <p id="mes">
+          <span>Just</span> <span>Relax</span> <span>and</span>
+          <span>enjoy</span> <span>world</span> <span>marvels</span>
+          <span>at</span> <span>your</span> <span>own</span> <span>pace</span>
+        </p>
+      </div>
+      <div
+        id="btnDiv"
+        style="text-align: center; width: 450px; margin-left: 8vw;"
+      >
+        <div id="btn" class="btn login">
+          <div id="log" style="width: 100%; padding: 5px 0px;">
+            Login
+          </div>
+          {{#if login}}
+          <div id="login1">
+            <i class="fas fa-envelope"></i>
+            <input id="user" type="text" placeholder="Username" /><br />
+            <i class="fas fa-key"></i>
+            <input id="password" type="password" placeholder="Password" />
+            <!-- <p id="forgot">Forgot
+                                Password?</p> -->
+            <div id="check_btn">
+              <i id="cancel" class="fas fa-check-circle i"></i>
+            </div>
+          </div>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+    <div class="menu-line">
+      <div style="color: rgb(58, 58, 58);">Contact</div>
+      <div style="color: rgb(58, 58, 58);">Languaje</div>
+    </div>
+    <div
+      id="menuItems"
+      style="
+        display: flex;
+        width: auto;
+        position: absolute;
+        bottom: 2vh;
+        left: 2vw;
+      "
+    >
+      <div class="menu-item" id="flights">
+        <!-- <img src="icons/plane.svg"> -->
+        <svg
+          id="planeItem"
+          data-name="Layer 1"
+          viewBox="0 0 128 64"
+          width="6rem"
+          height="7vh"
+        >
+          <path
+            d="M 202.52344 15.277344 A 5.012 5.012 0 0 0 200.9043 15.529297 L 175 24.121094 A 15.372 15.372 0 0 0 167.52344 47.921875 A 5.016 5.016 0 0 0 169.12305 49.318359 L 239.52344 87.685547 L 114.61914 135.00195 L 90.798828 120.15039 A 12.336 12.336 0 0 0 78.400391 117.34961 L 69.599609 120.26953 A 12.3 12.3 0 0 0 63.599609 139.31836 A 4.868 4.868 0 0 0 64.5 140.21094 L 80.970703 153.55859 C 75.322703 165.42659 78.670703 188.1782 80.970703 195.1582 A 5 5 0 0 0 87.291016 198.33008 L 151.98828 176.86133 A 5.0001992 5.0001992 0 0 0 148.83984 167.36914 L 89.240234 187.15039 C 87.056234 176.03039 87.363906 159.54961 91.003906 156.34961 A 5 5 0 0 0 90.851562 148.71094 L 71.416016 132.96289 A 2.312 2.312 0 0 1 72.775391 129.78125 L 81.576172 126.86133 A 2.312 2.312 0 0 1 84 127.49023 A 4.868 4.868 0 0 0 85.027344 128.33789 L 111.42773 144.81055 A 4.972 4.972 0 0 0 115.82812 145.24219 L 253.26758 93.181641 A 5 5 0 0 0 253.89062 84.113281 L 175.04297 41.146484 A 5.372 5.372 0 0 1 178.13867 33.621094 L 202.22656 25.621094 L 211.00391 29.433594 A 5.0031388 5.0031388 0 0 0 215.00391 20.261719 L 204.4707 15.689453 A 5.012 5.012 0 0 0 202.52344 15.277344 z M 229.20312 26.865234 A 5.0031388 5.0031388 0 0 0 227.14844 36.453125 L 227.14844 36.449219 L 230.00391 37.693359 A 5.0031388 5.0031388 0 0 0 234.00391 28.521484 L 231.14844 27.28125 A 5.0031388 5.0031388 0 0 0 229.20312 26.865234 z M 387.43359 34.130859 C 381.26221 34.04141 375.02188 35.024172 368.98438 37.310547 L 308.03125 60.677734 L 250.16406 35.541016 A 5.0031393 5.0031393 0 0 0 246.16406 44.714844 L 246.17969 44.714844 L 305.92383 70.662109 A 4.956 4.956 0 0 0 309.70312 70.742188 L 372.53906 46.658203 C 394.77506 38.258202 421.33881 52.18525 429.38281 69.78125 A 3.732 3.732 0 0 1 429.38281 72.857422 A 4 4 0 0 1 426.98438 75.066406 L 172.11133 159.64648 A 5.0001992 5.0001992 0 0 0 175.25977 169.13867 L 430.13086 84.554688 A 14.032 14.032 0 0 0 438.56836 76.849609 A 13.8 13.8 0 0 0 438.48047 65.617188 C 430.63047 48.448437 409.47427 34.450321 387.43359 34.130859 z "
+            transform="scale(0.25)"
+            id="path4"
+          />
+          <path
+            sodipodi:nodetypes="ccccccccc"
+            inkscape:connector-curvature="0"
+            id="bigCloud"
+            d="m 186.19167,45.808443 c 6.34613,-0.04226 12.69846,0.08611 19.04055,-0.06703 5.59387,-0.473979 9.73997,-6.726639 7.94456,-12.170974 -1.05088,-3.868374 -4.76795,-6.641863 -8.67222,-6.747214 -1.51103,-8.161159 -9.99068,-13.988931 -17.99325,-12.42608 -4.53002,0.736149 -8.66903,3.592716 -11.01455,7.605382 -5.58122,0.07206 -10.4684,4.826441 -10.88862,10.467359 -0.82918,5.8154 3.08353,11.972127 8.89121,13.001117 3.23642,0.835157 9.10132,0.277631 12.69232,0.337443 z"
+            style="
+              fill: #ffffff;
+              fill-opacity: 0.99607843;
+              stroke: #000000;
+              stroke-width: 2.13916922;
+              stroke-miterlimit: 4;
+              stroke-dasharray: none;
+              stroke-dashoffset: 0;
+            "
+          />
+          <path
+            d="m 108.68088,57.482495 h -0.95 a 1.25,1.25 0 0 0 0,2.5 h 0.95 a 1.25,1.25 0 0 0 0,-2.5 z"
+            id="path10"
+            inkscape:connector-curvature="0"
+          />
+          <path
+            d="M 102.35588,57.482495 H 16.280881 a 1.25,1.25 0 0 0 0,2.5 h 86.074999 a 1.25,1.25 0 0 0 0,-2.5 z"
+            id="path12"
+            inkscape:connector-curvature="0"
+          />
+          <path
+            style="fill: #ffffff; stroke: #000000; stroke-width: 2;"
+            d="m 149.94209,55.69479 c 4.8605,-0.0311 9.72574,0.06337 14.58315,-0.04933 4.28434,-0.348829 7.45984,-4.950534 6.08473,-8.957345 -0.80486,-2.846966 -3.65177,-4.888142 -6.64205,-4.965676 -1.15729,-6.006283 -7.65186,-10.295287 -13.78103,-9.145092 -3.46953,0.541776 -6.6396,2.644093 -8.43603,5.597253 -4.27466,0.05303 -8.01775,3.552065 -8.3396,7.703552 -0.63506,4.279899 2.36168,8.811001 6.80978,9.568296 2.47877,0.614642 6.9707,0.204326 9.72105,0.248345 z"
+            id="smallCloud"
+            inkscape:connector-curvature="0"
+            sodipodi:nodetypes="ccccccccc"
+          />
+        </svg>
+        <div style="font-family: Myriad Pro Bold;">Flights</div>
+      </div>
+      <div class="menu-item" id="cars">
+        <img src="icons/car.svg" />
+        <div style="font-family: Myriad Pro Bold;">Cars Rent</div>
+      </div>
+      <div class="menu-item" id="cruises">
+        <img src="icons/ship.svg" />
+        <div style="font-family: Myriad Pro Bold;">Cruise</div>
+      </div>
+      <div class="menu-item" id="hotels">
+        <img src="icons/bed.svg" />
+        <div style="font-family: Myriad Pro Bold;">Hotel Nights</div>
+      </div>
+    </div>
+    <div class="flight-panel">
+      <div style="background: transparent; width: 15vw; height: 100%;">
+        <img
+          id="airplane"
+          src="img/hotel/Wing.png"
+          style="position: relative; top: -2%; width: 15vw; height: 103%;"
+        />
+      </div>
+      <div
+        style="background: rgba(56, 57, 68, 0.9); width: 100%; height: 100%;"
+      >
+        <p
+          style="
+            margin: 4vw;
+            font-size: 2rem;
+            font-family: Myriad Pro Bold;
+            color: white;
+            justify-self: center;
+          "
+        >
+          Discover the World with our Flights
+        </p>
+      </div>
+    </div>
+  </div>
+</template>

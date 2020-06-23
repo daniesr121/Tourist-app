@@ -1,0 +1,72 @@
+
+ @font-face {
+    font-family: 'Myriad';
+    font-style: normal;
+    font-weight: 200;
+    src: local('fonts/Myriad Pro Regular.ttf');
+  }
+
+.btn{
+    font-family: Myriad Pro Bold;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    border-radius: 30px;
+    border:solid white;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    transition: background-color 0.2s ease-out;
+ 
+    // &:hover{
+    //     background-color: white;
+    //     color: #12b5d6;
+    // }
+
+}
+
+.home{
+    text-align: center;
+    vertical-align: middle;
+    margin:10px 40px 10px 0px;
+    padding: 10px 20px;
+    border-color: #3faaba;
+    background-color: #3faaba;
+    color: #071326;
+    &:hover{
+        background-color: transparent;
+        border-color: white;
+        color: white;
+    }
+}
+
+.back{
+    padding: 10px 20px;
+    width: 100px;
+    &:hover{
+        background-color: white;
+        border-color: white;
+        color: #071326;
+    }
+}
+
+.search{
+    position: absolute;
+    top: 20px;
+    z-index: 7;
+    input{
+        width: 150px;
+        border-width: 2px;
+        font-size: 1rem;
+        padding: 5px;
+        ::placeholder{ 
+            color: rgb(99, 96, 96);
+        };
+        &:hover{
+            color:#071326 
+        }
+    }
+    
+    font-size: 1rem;
+    right: 50px;
+}

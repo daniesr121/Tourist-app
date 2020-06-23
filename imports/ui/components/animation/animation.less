@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Myriad Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Myriad Bold"), local("fonts/Myriad Pro Bold.ttf");
+}
+
+.btn {
+  font-family: Myriad Pro Bold;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  border-radius: 30px;
+  border: solid white;
+  color: #fff;
+  cursor: pointer;
+  background: transparent;
+  transition: background-color 0.2s ease-out;
+  &:hover {
+    background-color: white;
+    color: #12b5d6;
+  }
+}
+
+.login {
+  width: 6rem;
+  font-size: 1.4rem;
+}
+
+#cancel {
+  margin: 1rem;
+  font-size: 2rem;
+}
+#title {
+  width: 40vw;
+  font-family: Myriad Pro Bold;
+  color: white;
+  margin: 20vh 8vw 5vh;
+  font-weight: bold;
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    stroke: red;
+    stroke-width: 3px;
+    span {
+      opacity: 0;
+      margin-top: 2rem;
+    }
+  }
+  p {
+    font-size: 2rem;
+    margin-top: 1rem;
+    span {
+      opacity: 0;
+      margin-top: 2rem;
+    }
+  }
+}
+
+#login {
+  background: rgba(101, 111, 117, 0.8);
+  font-family: Myriad Pro Bold;
+  position: absolute;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  transition: transform 0.2s ease-in-out;
+  input {
+    font-family: Myriad Pro Bold;
+    font-size: 1rem;
+    position: relative;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 0.5vh;
+    margin: 1vh;
+    color: white;
+    &::placeholder {
+      color: white;
+      font-family: Myriad Pro Bold;
+      padding: 0.5vh;
+    }
+  }
+}
+
+#login1 {
+  // background:rgba(101, 111, 117, 0.8);
+  // font-family: Myriad Pro Bold;
+  // position: absolute;
+  // top: 0;
+  // left: -250px;
+  // width: 250px;
+  // height: 100vh;
+  // color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  // vertical-align: middle;
+  // transition: transform 0.2s ease-in-out;
+  input {
+    width: 60%;
+    // font-family: Myriad Pro Bold;
+    font-size: 1rem;
+    position: relative;
+    background: transparent;
+    border: none;
+    border-bottom: 0.1rem solid #129ed6;
+    padding: 0.5vh;
+    margin: 1vh;
+    color: #129ed6;
+    &::placeholder {
+      color: #6ccee2;
+      // font-family: Myriad Pro Bold;
+      padding: 0.5vh;
+    }
+  }
+  // &:hover{
+  //     input{
+  //         color: #129ed6;
+  //         border-bottom-color: #129ed6;
+  //         &::placeholder{
+  //             color: #6ccee2;
+  //         }
+  //     }
+
+  // }
+}
+
+.menu-item {
+  transform: scale(0, 0);
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 10px;
+  box-shadow: 2px 4px 10px #a5a5a5;
+  background: rgba(255, 255, 255, 0.4);
+  width: 7rem;
+  height: 12vh;
+  img {
+    // margin:5px;
+    width: 6rem;
+    height: 7vh;
+  }
+  div {
+    font-family: Myriad Regular;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+}
+
+.menu-line {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  position: absolute;
+  background: white;
+  width: 100vw;
+  height: 4vh;
+  bottom: -4vh;
+  left: 0;
+  div {
+    margin: 5px 20px;
+    font-family: Myriad Pro Bold;
+  }
+}
+.flight-panel {
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  background: transparent;
+  box-shadow: 2px 2px 12px rgb(66, 66, 66);
+  width: 70vw;
+  height: 75vh;
+}
